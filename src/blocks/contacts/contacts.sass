@@ -1,0 +1,71 @@
+.contacts
+  position: relative
+  padding-top: 36px
+  padding-bottom: 0
+
+  &__wrapper
+    padding-top: 52px
+    padding-bottom: 72px
+
+  &__map
+    position: absolute
+    top: 36px
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 0
+    background-color: rgba(#ae7c78, 0.6)
+
+  &__information
+    position: relative
+    width: ((82px * 4 + 20px * 3) / 1200px * 100%)
+    padding-top: 40px
+    padding-right: 35px
+    padding-bottom: 63px
+    padding-left: 35px
+    margin-right: auto
+    margin-left: ((82px * 1 + 20px * 1) / 1200px * 100%)
+    background-color: #f7fafc
+    border-radius: 12px
+
+  &__title
+    margin-top: 0
+    margin-bottom: 39px
+    font-family: 'Playfair Display', serif
+    font-size: 36px
+    font-weight: 700
+    line-height: 48px
+    color: #ae7c78
+
+  &__description
+    margin-top: 0
+    margin-bottom: 0
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    line-height: 20px
+    color: #ae7c78
+
+    span
+      display: block
+      margin-bottom: 15px
+      font-weight: 400
+
+    b
+      display: block
+      font-weight: 500
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
+  &__link
+    font: inherit
+    color: #ae7c78
+    text-decoration: none
+    outline: 1px solid transparent
+    outline-offset: 2px
+    transition: color 200ms, outline-color 200ms
+
+    &:focus,
+    &:hover
+      color: darken(#ae7c78, 10%)
+      outline-color: #ae7c78

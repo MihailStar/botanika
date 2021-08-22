@@ -1,0 +1,66 @@
+@import '../blocks/header/header'
+@import '../blocks/hero/hero'
+@import '../blocks/features/features'
+@import '../blocks/popular/popular'
+@import '../blocks/catalog/catalog'
+@import '../blocks/discount/discount'
+@import '../blocks/steps/steps'
+@import '../blocks/news/news'
+@import '../blocks/reviews/reviews'
+@import '../blocks/contacts/contacts'
+@import '../blocks/footer/footer'
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+.main
+  margin-top: 0
+  margin-right: 0
+  margin-bottom: 0
+  margin-left: 0
+  background-color: #ffffff
+
+.container
+  width: 1200px
+  margin-right: auto
+  margin-left: auto
+
+.button
+  display: inline-block
+  min-width: 285px
+  padding-top: 31px
+  padding-right: 30px
+  padding-bottom: 29px
+  padding-left: 30px
+  font-family: 'Montserrat', sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 20px
+  color: #ffffff
+  text-align: center
+  text-decoration: none
+  vertical-align: middle
+  cursor: pointer
+  background-color: #d89999
+  border: 0
+  border-radius: 40px
+  transition: background-color 200ms
+
+  &:focus,
+  &:hover
+    background-color: darken(#d89999, 10%)
+    outline: 0
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0, 0, 0, 0)
+  clip-path: inset(100%)
+  white-space: nowrap
+  border: 0

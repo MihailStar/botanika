@@ -1,0 +1,34 @@
+.hero
+  .container
+    .hero__row
+      .hero__information
+        h1.hero__title Авторские букеты <em>в Петербурге</em>
+        p.hero__discription Оригинальные свежие букеты с доставкой по всему городу
+        .hero__button
+          a.button(href="#") Смотреть каталог
+      .hero__image.hero__image_first
+        picture
+          source(
+            srcset="./images/content/bouquet-1.webp 1x, ./images/content/bouquet-1@2x.webp 1.5x",
+            type="image/webp"
+          )
+          img(
+            srcset="./images/content/bouquet-1.jpg 1x, ./images/content/bouquet-1@2x.jpg 1.5x",
+            src="./images/content/bouquet-1.jpg",
+            width="386",
+            height="404",
+            alt="Букет"
+          )
+      .hero__image.hero__image_last
+        picture
+          source(
+            srcset="./images/content/bouquet-2.webp 1x, ./images/content/bouquet-2@2x.webp 1.5x",
+            type="image/webp"
+          )
+          img(
+            srcset="./images/content/bouquet-2.jpg 1x, ./images/content/bouquet-2@2x.jpg 1.5x",
+            src="./images/content/bouquet-2.jpg",
+            width="386",
+            height="420",
+            alt="Букет"
+          )

@@ -1,0 +1,73 @@
+.steps
+  padding-top: 42px
+  padding-bottom: 42px
+
+  &__title
+    margin-top: 0
+    margin-bottom: 36px
+    font-family: 'Playfair Display', serif
+    font-size: 36px
+    font-weight: 700
+    line-height: 48px
+    color: #ae7c78
+    text-align: center
+    letter-spacing: 0.02em
+
+  &__row
+    display: flex
+    column-gap: 20px
+    justify-content: space-between
+    padding-left: 0
+    margin-top: 0
+    margin-bottom: 0
+
+  &__item
+    display: flex
+    flex-direction: column
+    width: ((82px * 3 + 20px * 2) / 1200px * 100%)
+
+    &::before
+      flex-shrink: 0
+      width: 100%
+      height: 52px
+      margin-bottom: 10px
+      content: ''
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: auto 52px
+
+    &:nth-child(1)
+      &::before
+        background-image: url('../images/order.svg')
+
+    &:nth-child(2)
+      &::before
+        background-image: url('../images/details.svg')
+
+    &:nth-child(3)
+      &::before
+        background-image: url('../images/payment.svg')
+
+    &:nth-child(4)
+      &::before
+        background-image: url('../images/delivery.svg')
+
+  &__subtitle
+    margin-top: 0
+    margin-bottom: 8px
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    font-weight: 500
+    line-height: 20px
+    color: #ae7c78
+    text-align: center
+
+  &__discription
+    margin-top: 0
+    margin-bottom: 0
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    color: #ae7c78
+    text-align: center

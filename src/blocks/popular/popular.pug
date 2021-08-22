@@ -1,0 +1,56 @@
+section.popular
+  .container
+    h2.popular__title Популярные букеты
+    .popular__slider
+      .slider
+        ul.slider__slides
+          li.slider__slide
+            .slider__information
+              h3.slider__title Букет «Нежность»
+              p.slider__description Элегантный букет, который станет отличным подарком на день рождения или юбилей
+              p.slider__description 30 × 40 см
+              strong.slider__price 3600 руб.
+              .slider__button
+                a.button(href="#") Заказать
+            .slider__image
+              picture
+                source(
+                  srcset="./images/content/bouquet-3.webp, ./images/content/bouquet-3@2x.webp 1.5x",
+                  type="image/webp"
+                )
+                img(
+                  srcset="./images/content/bouquet-3.jpg, ./images/content/bouquet-3@2x.jpg 1.5x",
+                  src="./images/content/bouquet-3.jpg",
+                  width="386",
+                  height="438",
+                  alt="Букет"
+                )
+        .slider__control-buttons
+          button.slider__control-button.slider__control-button_prev.js-slider-button-prev(
+            type="button"
+          )
+            span.visually-hidden Предыдущий букет
+            svg(
+              width="51",
+              height="16",
+              viewBox="0 0 51 16",
+              xmlns="http://www.w3.org/2000/svg",
+              aria-hidden="true"
+            )
+              path(
+                d="M.293 8.707a1 1 0 010-1.414L6.657.929A1 1 0 018.07 2.343L2.414 8l5.657 5.657a1 1 0 11-1.414 1.414L.293 8.707zM51 9H1V7h50v2z"
+              )
+          button.slider__control-button.slider__control-button_next.js-slider-button-next(
+            type="button"
+          )
+            span.visually-hidden Следующий букет
+            svg(
+              width="51",
+              height="16",
+              viewBox="0 0 51 16",
+              xmlns="http://www.w3.org/2000/svg",
+              aria-hidden="true"
+            )
+              path(
+                d="M50.707 8.707a1 1 0 000-1.414L44.343.929a1 1 0 10-1.414 1.414L48.586 8l-5.657 5.657a1 1 0 001.414 1.414l6.364-6.364zM0 9h50V7H0v2z"
+              )

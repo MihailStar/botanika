@@ -1,0 +1,47 @@
+section.news
+  .container
+    .news__row
+      .news__information
+        h2.news__title Следите за нашими новостями
+        p.news__description Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым
+        .news__social
+          include ../social/social.pug
+          +social('dark')
+      .news__image.news__image_first
+        picture
+          source(
+            srcset="./images/content/bouquet-8.webp 1x, ./images/content/bouquet-8@2x.webp 1.5x",
+            type="image/webp"
+          )
+          img(
+            srcset="./images/content/bouquet-8.jpg 1x, ./images/content/bouquet-8@2x.jpg 1.5x",
+            src="./images/content/bouquet-8.jpg",
+            width="286",
+            height="220",
+            alt="Букет"
+          )
+        picture
+          source(
+            srcset="./images/content/bouquet-9.webp 1x, ./images/content/bouquet-9@2x.webp 1.5x",
+            type="image/webp"
+          )
+          img(
+            srcset="./images/content/bouquet-9.jpg 1x, ./images/content/bouquet-9@2x.jpg 1.5x",
+            src="./images/content/bouquet-9.jpg",
+            width="286",
+            height="220",
+            alt="Букет"
+          )
+      .news__image.news__image_last
+        picture
+          source(
+            srcset="./images/content/bouquet-10.webp 1x, ./images/content/bouquet-10@2x.webp 1.5x",
+            type="image/webp"
+          )
+          img(
+            srcset="./images/content/bouquet-10.jpg 1x, ./images/content/bouquet-10@2x.jpg 1.5x",
+            src="./images/content/bouquet-10.jpg",
+            width="386",
+            height="460",
+            alt="Букет"
+          )

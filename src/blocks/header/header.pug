@@ -1,0 +1,42 @@
+header.header
+  .header__wrapper
+    .container
+      .header__menu
+        nav.header-menu
+          ul.header-menu__row
+            .header-menu__first-part
+              li.header-menu__item
+                a.header-menu__link(href="#")
+                  span Каталог
+              li.header-menu__item
+                a.header-menu__link(href="#")
+                  span Доставка и оплата
+              li.header-menu__item
+                a.header-menu__link(href="#")
+                  span Отзывы
+            .header-menu__middle-part
+              li.header-menu__item
+                a.header-menu__link-logo
+                  span.visually-hidden На Главную
+                  picture
+                    source(
+                      srcset="./images/header-logo.webp 1x, ./images/header-logo@2x.webp 1.5x",
+                      type="image/webp"
+                    )
+                    img(
+                      srcset="./images/header-logo.png 1x, ./images/header-logo@2x.png 1.5x",
+                      src="./images/header-logo.png",
+                      width="100",
+                      height="33",
+                      alt="Логотип"
+                    )
+            .header-menu__last-part
+              li.header-menu__item
+                a.header-menu__link(href="#")
+                  span Спецпредложения
+              li.header-menu__item
+                a.header-menu__link(href="#")
+                  span Контакты
+              li.header-menu__item
+                a.header-menu__link(href="#")
+                  span Корзина

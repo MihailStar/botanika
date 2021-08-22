@@ -1,0 +1,11 @@
+block variables
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    block head
+    link(href="./styles/main.css", rel="stylesheet")
+    title= pageTitle
+  body(class=bodyClasses)
+    block body
+    script(src="./scripts/main.js", defer)

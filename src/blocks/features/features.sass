@@ -1,0 +1,59 @@
+.features
+  padding-top: 49px
+  padding-bottom: 49px
+
+  &__row
+    display: flex
+    column-gap: 20px
+    justify-content: space-between
+    padding-left: 0
+    margin-top: 0
+    margin-bottom: 0
+
+  &__item
+    display: flex
+    column-gap: 20px
+    width: ((82px * 4 + 20px * 3) / 1200px * 100%)
+
+    &::before
+      flex-shrink: 0
+      width: 82px
+      height: 52px
+      content: ''
+      background-repeat: no-repeat
+      background-position: top right
+      background-size: auto 52px
+
+    &:nth-child(1)
+      &::before
+        background-image: url('../images/delivery.svg')
+
+    &:nth-child(2)
+      &::before
+        background-image: url('../images/flowers.svg')
+        background-position: top right 9px
+
+    &:nth-child(3)
+      &::before
+        background-image: url('../images/photo.svg')
+
+  &__information
+    flex-shrink: 1
+
+  &__subtitle
+    margin-top: 0
+    margin-bottom: 8px
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    font-weight: 500
+    line-height: 20px
+    color: #ae7c78
+
+  &__discription
+    margin-top: 0
+    margin-bottom: 0
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    color: #ae7c78
